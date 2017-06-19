@@ -1,0 +1,163 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("archlinux.org") {
+    body, #content, table {
+        background-color: #151517 !important;
+        color: #c4c4c4 !important;
+        border: none !important;
+    }
+    #archnavbar {
+        background-color: #101112 !important;
+        border-bottom: 4px #992525 solid !important;
+    }
+    h1, h2, h3, h4, h5 {
+        color: #c4c4c4 !important;
+        border-bottom-color: #1d1d21 !important;
+        border-bottom-width: 4px;
+    }
+    pre, .pBody {
+        background-color: transparent !important;
+        border: none !important;
+        color: #c4c4c4 !important;
+    }
+    code {
+        background-color: #1d1d21 !important;
+        border: none !important;
+        color: #c4c4c4 !important;
+    }
+    #p-cactions li a {
+        background-color: transparent !important;
+        color: #c4c4c4 !important;
+    }
+    #p-cactions li {
+        border: none !important;
+    }
+    #p-cactions div.pBody ul {
+        /* background-color: #00ff00 !important; */
+        border-width: 0 0 4px 0 !important;
+        border-color #992525 !important;
+    }
+    #p-personal .portlet, #p-personal .pBody, #p-cactions .pBody {
+        background-color: #151517 !important;
+        color: #c4c4c4 !important;
+    }
+    table.results th {
+        background-color: #1d1d21 !important;
+    }
+    table.results tr.odd {
+        background-color: #373636 !important;
+    }
+    table.results tr.even {
+        background-color: #1d1d21 !important;
+    }
+    .pun .punwrap, .pun .blockpost h2 {
+        border: none;
+        background: none;
+        border-bottom: 1px dotted #BBB;
+        border-top: 1px dotted #BBB;
+    }
+    #brdmain, .pun .blockpost .postbody, .pun .blockpost .postfoot, .pun .blockpost, .pun .quotebox, .pun .codebox, .pun .pagelink a, .pun .pagelink * {
+        border-style: none !important;
+    }
+    .pun .quotebox, pre, code, .pun .quotebox blockquote div {
+        background-color: #1d1d21 !important;
+    }
+    #brdmenu a, #brdmenu a:link, #brdmenu a:visited, .pun .blocktable * {
+        background-color: #151517 !important;
+        border: none !important;
+    }
+    .pun .blocktable tr {
+        border-top: 1px dotted #BBB !important;
+    }
+
+    div#toc {
+        border: none !important; 
+        background-color: transparent !important;
+    }
+
+    #toc a {
+        color: #c4c4c4 !important;
+    }
+
+    span.tocnumber {
+        color: #992525 !important;
+    }
+
+    [style~="#08c"] {
+        border-color: #992525 !important;
+        background-color: #101112 !important;
+    }
+    [id|="ca"] {
+        background-color: #151517 !important;
+    }
+    a {
+        color: #992525 !important;
+    }
+    a.new, #p-cactions .new a, #p-personal a.new {
+        color: #6d3737 !important;
+    }
+    .searchButton {
+        display: none !important;
+    }
+    [class~="archwiki-template-message"] {
+        background-color: #1d1d21 !important;
+        border-width: 0 0 0 4px !important;
+        border-color: #477b7b !important;
+    }
+    [style*="#DDDDFF"] {
+        background-color: #1d1d21 !important;
+        border-width: 0 0 0 4px !important;
+        border-color: #e5ab57 !important;
+    }
+    [style*="#FFDDDD"] {
+        background-color: #1d1d21 !important;
+        border-width: 0 0 0 4px !important;
+        border-color: #992525 !important;
+    }
+    [style*="#DDFFDD"] {
+        background-color: #1d1d21 !important;
+        border-width: 0 0 0 4px !important;
+        border-color: #89a355 !important;
+    }
+    a.external, a.extiw {
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjEzIiB3aWR0aD0iMTMiIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4NCjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNi40Njc4MDgsLTI1OC4zOTAwNSkiPg0KPHBhdGggc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiM5OTI1MjU7IiBkPSJtNDEuNDcsMjU5LjQsNywwLDAsNy0yLTItMywyLDAtMSwzLTIuMjUsMSwxLDAtMy43NS0zLjc1LDAsMSwxLTIuMjUsMy0xLDAsMi0zeiIvPg0KPHBhdGggc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiM5OTI1MjU7IiBkPSJtNDMuNDcsMjYxLjQtNSwwLDAsOCw4LDAsMC01LTEsMCwwLDQtNiwwLDAtNiw0LDB6Ii8+DQo8cGF0aCBzdHlsZT0ib3BhY2l0eToxO2ZpbGw6Izk5MjUyNTsiIGQ9Im00MC41NSwyNjMuOWMwLTAuNjIxMywwLjYyMTMtMC42MjEzLDAuNjIxMy0wLjYyMTMsMS44NjQsMC42MjEzLDMuMTA3LDEuODY0LDMuNzI4LDMuNzI4LDAsMCwwLDAuNjIxMy0wLjYyMTMsMC42MjEzLTEuMjQzLTEuODY0LTEuODY0LTIuNDg1LTMuNzI4LTMuNzI4eiIvPg0KPC9nPg0KPC9zdmc+) center right no-repeat !important;
+    }
+    .catlinks {
+        background-color: transparent !important;
+        border: none !important;
+    }
+    .portlet a {
+        color: #707880 !important;
+    }
+
+    li#pt-userpage, li#pt-anonuserpage, li#pt-login {
+        background: none !important;
+    }
+
+    div.box {
+        background-color: transparent;
+        border: none;
+    }
+
+    #pkgsearch {
+        background-color: transparent;
+        border: none;
+    }
+
+    #pkgsearch input {
+        background: #232627;
+        color: #c4c4c4;
+        border: none;
+        float: none;
+        width: 270px;
+    }
+
+    #news h3 a {
+        background: #992525;
+        color: #c4c4c4 !important;
+    }
+
+    h3 span.arrow {
+        border-top: 6px solid #992525;
+    }
+}
