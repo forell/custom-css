@@ -1,0 +1,180 @@
+:root { --fg-color: #c4c4c4;
+    --bg-color: #151517;
+    --bg-dark-color: #101112;
+    --bg-light-color: #1d1d21;
+    --light-gray: #465457;
+    --accent-color: #992525;
+}
+
+.friends-table, .messages-wrapper, .scroller-NXV0-d, .channel-members,
+#rtc-connection, .private-channels {
+    background: var(--bg-color) !important;
+}
+
+.guilds-wrapper, .guild-header, .title-wrap, .private-channels .search-bar {
+    background: var(--bg-dark-color) !important;
+}
+
+.account, .btn-group > .btn, .channel-textarea-inner, .chat form, .typing {
+    background: var(--bg-light-color) !important;
+}
+
+/* Search */
+.search-bar, .search-result-message.hit {
+    background: var(--bg-light-color) !important;
+    border-radius: 0 !important;
+}
+
+.search-results-wrap, .search-header, .search-results .channel-name {
+    background: var(--bg-color) !important;
+    border-radius: 0 !important;
+}
+
+/* Popouts */
+
+.popout .popout-menu, .search-popout, .channel-textarea-autocomplete-inner, .channel-textarea-autocomplete-inner header {
+    background: var(--bg-light-color) !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: 4px 4px 6px rgba(0,0,0,.3) !important;
+}
+
+.user-popout {
+    box-shadow: 4px 4px 6px rgba(0,0,0,.3) !important;
+}
+
+.search-popout .option.selected, .user-popout .body, .channel-textarea-autocomplete-inner .active {
+    background: var(--bg-color) !important;
+    border-radius: 0 !important;
+}
+
+.user-popout .header, .user-popout .quick-message {
+    background: var(--bg-dark-color) !important;
+    border: none;
+}
+
+.user-popout .footer {
+    display: none;
+}
+
+.avatar-popout {
+    border-color: var(--accent-color) !important;
+}
+
+.search-popout .option::after {
+    background: unset !important;
+}
+
+/* Dividers, separators */
+
+.divider, .divider span, .divider:before {
+    background: transparent !important;
+    border-style: none !important;
+}
+
+/* Fuck borders */
+
+.message-group, .channel-textarea-inner, .chat form, .channel-textarea-upload,
+.guild-header header, .title-wrap, .btn-group, .btn-group > .btn,
+#rtc-connection, .search-result .hit, .private-channels .search-bar {
+    border-style: none !important;
+    box-shadow: none !important;
+}
+
+.private-channels .search-bar {
+    height: 56px;
+    border-radius: 0;
+}
+
+.chat form {
+    margin: 0 !important;
+    height: 96px !important;
+}
+
+.account {
+    height: 95px;
+}
+
+.btn-group > .btn {
+    margin-right: 10px;
+}
+
+.channel-textarea-emoji, .popout-menu-separator {
+    display: none;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-track-piece {
+    background: var(--bg-color) !important;
+    border-color: var(--bg-color) !important;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+    background: var(--bg-light-color) !important;
+    border-color: var(--bg-color) !important;
+    border-radius: 0 !important;
+}
+
+.guilds-wrapper .guilds .guild .guild-inner, .search-bar, .search-popout {
+    border-radius: 0 !important;
+}
+
+/* Channels */
+.content-2mSKOj, .containerDefault-7RImuF {
+    margin-left: 0;
+}
+
+.unread-23Kvxk {
+    border-radius: 0;
+    background: var(--accent-color);
+}
+
+/* Channel hover */
+.contentHoveredText-2HYGIY {
+    border-radius: 0 !important;
+    background: var(--bg-light-color);
+}
+
+/* Current channel */
+.contentSelectedText-3j5CXt, .private-channels .selected.private {
+    border-radius: 0 !important;
+    background: var(--bg-light-color);
+}
+
+.contentSelectedText-3j5CXt:before, .private-channels .channel.selected:before {
+    border-left: 4px solid var(--accent-color) !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    content: " ";
+}
+
+/* The top-right "?" button */
+.header-toolbar .separator + button + button {
+    display: none;
+    visibility: hidden;
+}
+
+/* Search bullshit */
+.search-result:before, .search-result:after {
+    background-image: none !important;
+}
+
+/* User info */
+.status {
+    border-radius: 30% !important;
+}
+
+.avatar-large, .avatar-small, .avatar-popout {
+    border-radius: 0;
+}
+
+/* DM */
+.private-channels .search-bar-inner {
+    background: var(--bg-light-color);
+    border-radius: 0;
+}
