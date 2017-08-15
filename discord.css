@@ -1,4 +1,5 @@
-:root { --fg-color: #c4c4c4;
+:root { 
+    --fg-color: #c4c4c4;
     --bg-color: #151517;
     --bg-dark-color: #101112;
     --bg-light-color: #1d1d21;
