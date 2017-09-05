@@ -1,9 +1,9 @@
 :root { 
     --fg: #c4c4c4;
-    --bg: #151517;
-    --bg-dark: #101112;
-    --bg-light: #1d1d21;
-    --bg-hover: #26262a;
+    --bg: #181818;
+    --bg-dark: #121212;
+    --bg-light: #242424;
+    --bg-hover: #2a2a2a;
     --accent: #992525;
     --font-monospace: "Hack";
 }
@@ -19,26 +19,6 @@
 
 .header-1tSljs, .guilds-wrapper, .guild-header, .title-wrap, .private-channels .search-bar {
     background: var(--bg-dark) !important;
-}
-
-/* Account info */
-.channels-wrap, .container-iksrDt, .btn-group > .btn, .typing {
-    background: var(--bg-light) !important;
-}
-
-.container-iksrDt {
-    height: 97px;
-}
-
-.container-iksrDt > .avatar-small {
-    height: 64px;
-    width: 64px;
-    background-size: 64px 64px;
-}
-
-.container-iksrDt .status {
-    height: 14px !important;
-    width: 14px !important;
 }
 
 /* Search */
@@ -63,16 +43,16 @@
 
 .search-popout .option.selected, .userPopout-4pfA0d, .body-3rkFrF, .channel-textarea-autocomplete-inner .active {
     background: var(--bg) !important;
-    border: none;
+    border: none !important;
 }
 
 .userPopout-4pfA0d, .header-3mZJcV, .userPopout-4pfA0d .quick-message {
     background: var(--bg-dark) !important;
-    border: none;
+    border: none !important;
 }
 
 .userPopout-4pfA0d .footer-2J5zqP {
-    display: none;
+    display: none !important;
 }
 
 .avatar-1BXaQj {
@@ -124,15 +104,11 @@
 }
 
 .private-channels .search-bar {
-    height: 56px;
+    height: 56px !important;
 }
 
 .btn-group > .btn {
     margin-right: 10px;
-}
-
-.popout-menu-separator {
-    display: none;
 }
 
 /* Scrollbar */
@@ -149,22 +125,40 @@
     border-radius: unset !important;
 }
 
+.scrollbar, .scrollbar > .track, .scrollbar::after,
+.scrollbar-2so3Ly, .pad-3D5tOh {
+    background: var(--bg) !important;
+    border-color: var(--bg) !important;
+}
+
+.scrollbar > .thumb, .scrollbar > .thumb::after,
+.thumb-3VsfAI {
+    background: var(--bg-light) !important;
+    border-color: var(--bg) !important;
+    border-radius: unset !important;
+}
+
+.scrollbar {
+    width: 9px !important;
+}
+
 /* Channels */
 .content-2mSKOj, .containerDefault-7RImuF {
-    margin-left: 0;
+    margin-left: 0 !important;
 }
 
 .unread-23Kvxk {
-    background: var(--accent);
+    background: var(--accent) !important;
 }
 
 /* Channel hover */
-.contentHoveredText-2HYGIY, .private-channels .channel:hover {
-    background: var(--bg-light);
+.wrapperHoveredText-1PA_Uk, .contentHoveredText-2HYGIY, .private-channels .channel:hover {
+    background: var(--bg-light) !important;
 }
 
 /* Current channel */
-.contentSelectedText-3j5CXt, .private-channels .channel.selected,
+.contentSelectedText-3j5CXt, .wrapperSelectedText-31jJa8,
+.private-channels .channel.selected,
 .private-channels .channel.selected a,
 .private-channels .channel:hover a {
     background: var(--bg-light) !important;
@@ -179,12 +173,6 @@
     content: " ";
 }
 
-/* The top-right "?" button */
-.header-toolbar .separator + button + button {
-    display: none;
-    visibility: hidden;
-}
-
 /* Search bullshit */
 .search-result:before, .search-result:after {
     background-image: none !important;
@@ -196,18 +184,17 @@
 }
 
 .avatar-small .status {
-    width: 8px;
-    height: 8px;
+    width: 8px !important;
+    height: 8px !important;
 }
 
 .bot-tag, .botTag-1OwMgs {
     background: var(--accent) !important;
     color: var(--fg) !important;
-    font-weight: bold;
+    font-weight: bold !important;
 }
 
 /* User profile */
-
 #user-profile-modal .header::after,
 #user-profile-modal .tab-bar-container,
 #user-profile-modal .avatar-wrapper {
@@ -228,7 +215,7 @@
 }
 
 #user-profile-modal .tab-bar-item {
-    border-width: 4px;
+    border-width: 4px !important;
 }
 
 #user-profile-modal .connected-account {
@@ -253,9 +240,29 @@
     color: var(--fg) !important;
 }
 
+/* Account info */
+.channels-wrap, .container-iksrDt, .btn-group > .btn, .typing {
+    background: var(--bg-light) !important;
+}
+
+.container-iksrDt {
+    height: 73px !important;
+}
+
+.container-iksrDt > .avatar-small {
+    height: 64px !important;
+    width: 64px !important;
+    background-size: 64px 64px !important;
+}
+
+.container-iksrDt .status {
+    height: 14px !important;
+    width: 14px !important;
+}
+
 /* DM */
 .private-channels .search-bar-inner {
-    background: var(--bg-light);
+    background: var(--bg-light) !important;
 }
 
 .friends-header {
@@ -281,14 +288,24 @@
     border: none !important;
 }
 
+.channel-text-area-default {
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+.typing {
+    bottom: -6px !important;
+}
+
+/* Fix height in FF */
+.textArea-20yzAH[style*="height: auto"] {
+    height: 1.35em !important;
+}
+
+
 /* Separator after the upload button */
 .attachButtonDivider-3tknGJ {
     visibility: hidden;
-}
-
-/* Emote picker */
-.sprite-3pvJkd {
-    display: none;
 }
 
 /* Code */
@@ -296,11 +313,11 @@ pre, code {
     background: var(--bg-light) !important;
     color: var(--fg) !important;
     font-family: var(--font-monospace) !important;
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 pre, code.inline {
-    border-style: solid;
+    border-style: solid !important;
     border-width: 0 0 0 4px !important;
     border-color: var(--accent) !important;
 }
@@ -308,7 +325,7 @@ pre, code.inline {
 /* Guilds */
 .new-messages-indicator {
     background: var(--accent) !important;
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .guilds .guild.selected:before, .guild.unread:before {
@@ -316,10 +333,10 @@ pre, code.inline {
     border-radius: unset !important;
 }
 
-.guild .badge {
-    background-color: var(--accent);
-    box-shadow: none;
-    font-weight: bold;
+.guild .badge, .wrapper-2x09RX {
+    background-color: var(--accent) !important;
+    box-shadow: none !important;
+    font-weight: bold !important;
 }
 
 .friends-icon, .guild-inner, .guilds-add {
@@ -337,4 +354,40 @@ pre, code.inline {
 
 .guilds-add-inner {
     color: var(--fg);
+}
+
+/* Mentions */
+.mention {
+    color: var(--accent) !important;
+    background-color: unset !important;
+}
+
+.mentioned .message-text {
+    background: var(--bg-light) !important;
+}
+
+.mentioned .message-text::after {
+    border-color: var(--accent) !important;
+    border-radius: unset !important;
+}
+
+/* Voice */
+.container-3lnMWU {
+    border: none !important;
+}
+
+/* Emote picker */
+.sprite-3pvJkd, .emojiButton-3c_qrT {
+    display: none !important;
+}
+
+/* Download button */
+.btn-download-apps {
+    display: none !important;
+}
+
+/* The top-right "?" button */
+.header-toolbar .separator + button + button {
+    display: none;
+    visibility: hidden;
 }
