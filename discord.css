@@ -21,6 +21,28 @@
     background: var(--bg-dark) !important;
 }
 
+/* Chat */
+.welcome-message p {
+    color: var(--fg) !important;
+}
+
+.welcome-message h1 {
+    color: var(--accent) !important;
+}
+
+.welcome-message .icon {
+    display: none !important;
+}
+
+.messages a {
+    color: var(--accent) !important;
+}
+
+/* Embed */
+.embed {
+    border: none !important;
+}
+
 /* Search */
 .search-bar, .search-result-message.hit {
     background: var(--bg-light) !important;
@@ -70,6 +92,26 @@
 .member-role-add {
     background: var(--bg-light) !important;
     border: none !important;
+}
+
+.tooltip {
+    background: var(--bg-light) !important;
+}
+
+.tooltip-top::after {
+    border-top-color: var(--bg-light) !important;
+}
+
+.tooltip-bottom::after {
+    border-bottom-color: var(--bg-light) !important;
+}
+
+.tooltip-left::after {
+    border-left-color: var(--bg-light) !important;
+}
+
+.tooltip-right::after {
+    border-right-color: var(--bg-light) !important;
 }
 
 /* Dividers, separators */
@@ -186,6 +228,10 @@
 .avatar-small .status {
     width: 8px !important;
     height: 8px !important;
+}
+
+.status.status-typing {
+    width: 26px !important;
 }
 
 .bot-tag, .botTag-1OwMgs {
