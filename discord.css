@@ -4,12 +4,18 @@
     --bg-dark: #121212;
     --bg-light: #242424;
     --bg-hover: #2a2a2a;
+    --fg-inactive: #606060;
     --accent: #992525;
+    --font-sans: "Fira Sans";
     --font-monospace: "Hack";
 }
 
 * {
     border-radius: unset !important;
+}
+
+body, .header-1tSljs, textarea {
+    font-family: var(--font-sans) !important;
 }
 
 .friends-table, .messages-wrapper, .scroller-NXV0-d, .channel-members,
@@ -44,6 +50,11 @@
 }
 
 /* Search */
+.search-filter, .search-answer {
+    background-color: unset !important;
+    border-bottom: 3px solid var(--accent) !important;
+}
+
 .search-bar, .search-result-message.hit {
     background: var(--bg-light) !important;
 }
@@ -193,6 +204,14 @@
     background: var(--accent) !important;
 }
 
+.scroller-fzNley {
+    padding-right: 0 !important;
+}
+
+.iconSpacing-5GIHkT {
+    margin-right: 4px !important;
+}
+
 /* Channel hover */
 .wrapperHoveredText-1PA_Uk, .contentHoveredText-2HYGIY, .private-channels .channel:hover {
     background: var(--bg-light) !important;
@@ -284,6 +303,11 @@
 .context-menu, .context-menu .item {
     background: var(--bg) !important;
     color: var(--fg) !important;
+}
+
+/* Discrim */
+.headerTagNormal-KyD3_J {
+    color: var(--fg-inactive) !important;
 }
 
 /* Account info */
@@ -415,6 +439,10 @@ pre, code.inline {
 .mentioned .message-text::after {
     border-color: var(--accent) !important;
     border-radius: unset !important;
+}
+
+.unread-3nyKcq {
+    display: none !important;
 }
 
 /* Voice */
