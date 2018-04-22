@@ -1,133 +1,170 @@
-@namespace url(http://www.w3.org/1999/xhtml);
-
 @-moz-document domain("archlinux.org") {
-    body, #content, table {
-        background-color: #151517 !important;
-        color: #c4c4c4 !important;
-        border: none !important;
-    }
-    #archnavbar {
-        background-color: #101112 !important;
-        border-bottom: 4px #992525 solid !important;
-    }
-    h1, h2, h3, h4, h5 {
-        color: #c4c4c4 !important;
-        border-bottom-color: #1d1d21 !important;
-        border-bottom-width: 4px;
-    }
-    pre, .pBody {
-        background-color: transparent !important;
-        border: none !important;
-        color: #c4c4c4 !important;
-    }
-    code {
-        background-color: #1d1d21 !important;
-        border: none !important;
-        color: #c4c4c4 !important;
-    }
-    #p-cactions li a {
-        background-color: transparent !important;
-        color: #c4c4c4 !important;
-    }
-    #p-cactions li {
-        border: none !important;
-    }
-    #p-cactions div.pBody ul {
-        /* background-color: #00ff00 !important; */
-        border-width: 0 0 4px 0 !important;
-        border-color #992525 !important;
-    }
-    #p-personal .portlet, #p-personal .pBody, #p-cactions .pBody {
-        background-color: #151517 !important;
-        color: #c4c4c4 !important;
-    }
-    table.results th {
-        background-color: #1d1d21 !important;
-    }
-    table.results tr.odd {
-        background-color: #373636 !important;
-    }
-    table.results tr.even {
-        background-color: #1d1d21 !important;
-    }
-    .pun .punwrap, .pun .blockpost h2 {
-        border: none;
-        background: none;
-        border-bottom: 1px dotted #BBB;
-        border-top: 1px dotted #BBB;
-    }
-    #brdmain, .pun .blockpost .postbody, .pun .blockpost .postfoot, .pun .blockpost, .pun .quotebox, .pun .codebox, .pun .pagelink a, .pun .pagelink * {
-        border-style: none !important;
-    }
-    .pun .quotebox, pre, code, .pun .quotebox blockquote div {
-        background-color: #1d1d21 !important;
-    }
-    #brdmenu a, #brdmenu a:link, #brdmenu a:visited, .pun .blocktable * {
-        background-color: #151517 !important;
-        border: none !important;
-    }
-    .pun .blocktable tr {
-        border-top: 1px dotted #BBB !important;
+    :root {
+        --fg: #c4c4c4;
+        --bg: #181818;
+        --bg-dark: #121212;
+        --bg-light: #242424;
+        --insensitive-bg-light: rgba(36, 36, 36, 0.5);
+        --fg-accent: #993131;
+        --bg-accent: #802626;
+        --accent-inactive: #6d3737;
+        --bg-green: #89a355;
     }
 
-    div#toc {
+    body, #content, table {
+        color: var(--fg) !important;
+        background: var(--bg) !important;
+        border: none !important;
+    }
+
+    body, h1, h2 {
+        font-family: Fira Sans !important;
+    }
+
+    body, #content,
+    div#mw-panel, div.portal {
+        font-size: 1.1em !important;
+    }
+
+    a {
+        color: var(--fg-accent) !important;
+    }
+
+    a.new, #p-cactions .new a, #p-personal a.new {
+        color: var(--accent-inactive) !important;
+    }
+
+    #mw-panel a {
+        color: var(--fg) !important;
+    }
+
+    #archnavbar {
+        background: var(--bg-dark) !important;
+        border-bottom: 4px var(--bg-accent) solid !important;
+    }
+
+    #archnavbar a {
+        color: var(--fg) !important;
+    }
+
+    h1, h2, h3, h4, h5 {
+        color: var(--fg) !important;
+        border-bottom-color: var(--bg-light) !important;
+        border-bottom-width: 4px !important;
+    }
+
+    pre, .pBody {
+        background: transparent !important;
+        border: none !important;
+        color: var(--fg) !important;
+    }
+
+    code {
+        background: var(--bg-light) !important;
+        border: none !important;
+        color: var(--fg) !important;
+    }
+
+    .vectorTabs {
+        background: unset !important;
+        border-width: 0 0 3px 0 !important;
+        border-style: solid !important;
+        border-color: var(--bg-light) !important;
+    }
+
+    .vectorMenu h3 {
+        background: unset !important;
+    }
+
+    .vectorTabs li.selected {
+        background: var(--bg-light) !important;
+        box-shadow: inset 0 3px var(--bg-accent);
+    }
+
+    .vectorTabs li {
+        border: unset !important;
+    }
+
+    .vectorTabs span {
+        background: unset !important;
+    }
+
+    .vectorTabs li a {
+        color: var(--fg) !important;
+        text-decoration: none !important;
+    }
+
+    .vectorTabs li:hover:not(.selected) {
+        background: var(--insensitive-bg-light) !important;
+    }
+
+    #simpleSearch {
+        background: var(--bg-light) !important;
+        border: unset !important;
+    }
+
+    #simpleSearch input {
+        color: var(--fg) !important;
+    }
+
+    #toc {
         border: none !important; 
         background-color: transparent !important;
     }
 
     #toc a {
-        color: #c4c4c4 !important;
+        color: var(--fg) !important;
     }
 
-    span.tocnumber {
-        color: #992525 !important;
+    .tocnumber {
+        color: var(--fg-accent) !important;
     }
 
-    [style~="#08c"] {
-        border-color: #992525 !important;
-        background-color: #101112 !important;
-    }
-    [id|="ca"] {
-        background-color: #151517 !important;
-    }
-    a {
-        color: #992525 !important;
-    }
-    a.new, #p-cactions .new a, #p-personal a.new {
-        color: #6d3737 !important;
-    }
     .searchButton {
         display: none !important;
     }
-    [class~="archwiki-template-message"] {
-        background-color: #1d1d21 !important;
+
+    .archwiki-template-message {
+        background-color: var(--bg-light) !important;
         border-width: 0 0 0 4px !important;
         border-color: #477b7b !important;
     }
-    [style*="#DDDDFF"] {
-        background-color: #1d1d21 !important;
+
+    .archwiki-template-box-note {
+        background-color: var(--bg-light) !important;
         border-width: 0 0 0 4px !important;
         border-color: #e5ab57 !important;
     }
-    [style*="#FFDDDD"] {
-        background-color: #1d1d21 !important;
+
+    .archwiki-template-box-warning {
+        background-color: var(--bg-light) !important;
         border-width: 0 0 0 4px !important;
-        border-color: #992525 !important;
+        border-color: var(--bg-accent) !important;
     }
-    [style*="#DDFFDD"] {
-        background-color: #1d1d21 !important;
+
+    .archwiki-template-box-tip {
+        background-color: var(--bg-light) !important;
         border-width: 0 0 0 4px !important;
-        border-color: #89a355 !important;
+        border-color: var(--bg-green) !important;
     }
+
+    .archwiki-template-meta-related-articles-start > p {
+        color: var(--fg) !important;
+        background: var(--bg) !important;
+        border-color: var(--bg-accent) !important;
+    }
+
     a.external, a.extiw {
         background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjEzIiB3aWR0aD0iMTMiIHZlcnNpb249IjEuMSIgeG1sbnM6Y2M9Imh0dHA6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL25zIyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIj4NCjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNi40Njc4MDgsLTI1OC4zOTAwNSkiPg0KPHBhdGggc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiM5OTI1MjU7IiBkPSJtNDEuNDcsMjU5LjQsNywwLDAsNy0yLTItMywyLDAtMSwzLTIuMjUsMSwxLDAtMy43NS0zLjc1LDAsMSwxLTIuMjUsMy0xLDAsMi0zeiIvPg0KPHBhdGggc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiM5OTI1MjU7IiBkPSJtNDMuNDcsMjYxLjQtNSwwLDAsOCw4LDAsMC01LTEsMCwwLDQtNiwwLDAtNiw0LDB6Ii8+DQo8cGF0aCBzdHlsZT0ib3BhY2l0eToxO2ZpbGw6Izk5MjUyNTsiIGQ9Im00MC41NSwyNjMuOWMwLTAuNjIxMywwLjYyMTMtMC42MjEzLDAuNjIxMy0wLjYyMTMsMS44NjQsMC42MjEzLDMuMTA3LDEuODY0LDMuNzI4LDMuNzI4LDAsMCwwLDAuNjIxMy0wLjYyMTMsMC42MjEzLTEuMjQzLTEuODY0LTEuODY0LTIuNDg1LTMuNzI4LTMuNzI4eiIvPg0KPC9nPg0KPC9zdmc+) center right no-repeat !important;
     }
+
+    .plainlinks a.external {
+        background: unset !important;
+    }
+
     .catlinks {
         background-color: transparent !important;
         border: none !important;
-    }
-    .portlet a {
-        color: #707880 !important;
     }
 
     li#pt-userpage, li#pt-anonuserpage, li#pt-login {
@@ -135,29 +172,63 @@
     }
 
     div.box {
-        background-color: transparent;
-        border: none;
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    /* Tables */
+    table.wikitable td, table.wikitable th {
+        border: none !important;
+    }
+
+    table.wikitable tr > th {
+        background: var(--bg-light) !important;
+    }
+
+    table.wikitable tbody tr:nth-child(odd) > th {
+        background: var(--insensitive-bg-light) !important;
+    }
+
+    table.wikitable tr > td {
+        background: var(--bg) !important;
+    }
+
+    table.wikitable tr:nth-child(even) > td {
+        background: var(--insensitive-bg-light) !important;
     }
 
     #pkgsearch {
-        background-color: transparent;
-        border: none;
+        background-color: transparent !important;
+        border: none !important;
     }
 
     #pkgsearch input {
-        background: #232627;
-        color: #c4c4c4;
-        border: none;
-        float: none;
-        width: 270px;
+        background: var(--bg-light) !important;
+        color: var(--fg) !important;
+        border: none !important;
+        float: none !important;
+        width: 270px !important;
     }
 
     #news h3 a {
-        background: #992525;
-        color: #c4c4c4 !important;
+        background: var(--bg-accent) !important;
+        color: var(--fg) !important;
     }
 
     h3 span.arrow {
-        border-top: 6px solid #992525;
+        border-top: 6px solid var(--bg-accent) !important;
+    }
+
+    /* AUR */
+    table.results th {
+        background-color: var(--bg-light) !important;
+    }
+
+    table.results tr.odd {
+        background-color: var(--insensitive-bg-light) !important;
+    }
+
+    table.results tr.even {
+        background-color: var(--bg-light) !important;
     }
 }
