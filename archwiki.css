@@ -22,19 +22,31 @@
     }
 
     body, #content,
-    div#mw-panel, div.portal {
+    #mw-panel, .portal {
         font-size: 1.1em !important;
     }
 
-    a {
+    a, #bodyContent > .mw-content-ltr a {
         color: var(--fg-accent) !important;
+    }
+
+    #bodyContent > .mw-content-ltr a:hover {
+        color: var(--fg-accent) !important;
+    }
+
+    #catlinks #mw-normal-catlinks a, #footer #footer-info a, #footer #footer-places a {
+       color: var(--fg-accent) !important;
     }
 
     a.new, #p-cactions .new a, #p-personal a.new {
         color: var(--accent-inactive) !important;
     }
 
-    #mw-panel a {
+    #mw-panel .portal .body ul li a {
+        color: var(--fg) !important;
+    }
+
+    #mw-panel .portal .body ul li a:hover {
         color: var(--fg) !important;
     }
 
@@ -108,12 +120,16 @@
     }
 
     #toc {
-        border: none !important; 
+        border: none !important;
         background-color: transparent !important;
     }
 
-    #toc a {
+    #bodyContent #toc a {
         color: var(--fg) !important;
+    }
+
+    #mw-navigation #mw-head ul li a {
+         color: var(--fg) !important;
     }
 
     .tocnumber {
