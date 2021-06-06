@@ -1,0 +1,88 @@
+:root {
+  --fg: #c4c4c4;
+  --bg: #181818;
+  --bg-dark: #121212;
+  --bg-light: #242424;
+  --bg-hover: #2a2a2a;
+  --accent: #802626;
+  --status-good: #89a355;
+}
+
+/** Overwrite default variables. **/
+
+:root {
+  --toolbarbutton-border-radius: 0 !important;
+  --tab-border-radius: 0 !important;
+  --tabs-navbar-shadow-size: 0 !important;
+  --tab-selected-bgcolor: var(--bg-light) !important;
+  --toolbar-bgcolor: var(--bg-light) !important;
+  --toolbar-bgimage: unset !important;
+  --toolbar-field-non-lwt-bgcolor: var(--bg) !important;
+  --chrome-content-separator-color: unset !important;
+  --arrowpanel-border-radius: 0 !important;
+  --arrowpanel-menuitem-border-radius: 0 !important;
+  --autocomplete-popup-separator-color: transparent !important;
+  --panel-background: var(--bg) !important;
+  --button-bgcolor: var(--bg-light) !important;
+  --button-hover-bgcolor: var(--bg-hover) !important;
+  --button-active-bgcolor: var(--accent) !important;
+}
+
+/** Compact top bars **/
+
+:root {
+  --urlbar-min-height: 26px !important;
+  --urlbar-icon-padding: 3px !important;
+  --tab-min-height: 28px !important;
+}
+
+/** Tab bar **/
+
+.tabbrowser-tab {
+  padding: 0 !important;
+}
+
+.tab-background {
+  margin: 0 !important;
+  margin-top: 4px !important;
+}
+
+.tab-background[selected] {
+  border-top: 4px solid var(--accent) !important;
+}
+
+.tab-content {
+  margin-top: 4px !important;
+}
+
+.tab-close-button {
+  display: none !important;
+}
+
+/** URL bar **/
+
+#urlbar {
+  width: 100% !important;
+  top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+  left: 0 !important;
+}
+
+#urlbar-input-container {
+  height: unset !important;
+  padding: var(--urlbar-container-padding) !important;
+}
+
+#urlbar-background, #searchbar {
+  border: unset !important;
+  animation: unset !important;
+}
+
+#urlbar-background {
+  background: var(--bg) !important;
+}
+
+/** Misc **/
+
+#window-controls, .private-browsing-indicator, .search-one-offs {
+  display: none !important;
+}
